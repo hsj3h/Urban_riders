@@ -1,0 +1,378 @@
+List<Map<String,dynamic>>types=[
+    {'cartype':'Sedan',
+      'image':'assets/category/imagecompressor/sedan-min.png'
+
+  },
+    {
+      'cartype':'Cabriolet',
+      'image':'assets/category/imagecompressor/cabriolet-min.png'
+    },
+    {
+      'cartype':'HatchBack',
+      'image':'assets/category/imagecompressor/hatchback-min.png'
+    },
+    {
+      'cartype':'Modified Car',
+      'image':'assets/category/imagecompressor/modifiedcar-min.png'
+    },
+    {
+      'cartype':'MPV',
+      'image':'assets/category/imagecompressor/mpv-min.png'
+    },
+    {
+      'cartype':'Sports Car',
+      'image':'assets/category/imagecompressor/Sportscar-min.png'
+    },
+    {
+      'cartype':'SUV',
+      'image':'assets/category/imagecompressor/suv-min.png'
+    },
+    // {
+    //   'cartype':'Luxuary',
+    //   'image':'assets/category/imagecompressor/cabriolet-min.png'
+    // }
+
+  ];
+
+  List<Map<String,dynamic>>Sedanlist=[{
+  }]
+
+
+  ///////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+  import 'package:flutter/material.dart';
+  class Homepagge extends StatefulWidget {
+    const Homepagge({super.key});
+
+    @override
+    State<Homepagge> createState() => _HomepaggeState();
+  }
+
+  class _HomepaggeState extends State<Homepagge> {
+    // DateTimeRange Selecteddate=
+
+
+    @override
+    Widget build(BuildContext context) {
+      return MaterialApp(
+        home: Scaffold(
+          appBar: AppBar(
+            backgroundColor: Colors.redAccent,
+          ),
+          bottomNavigationBar: Container(
+            height: 60,
+            color: Colors.red,
+            child: Row(mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+              children: [
+                Icon(Icons.menu,semanticLabel: 'Menu',size: 40,),
+                Icon(Icons.home,semanticLabel: 'Home',size: 40,),
+                Icon(Icons.person,semanticLabel: 'Profile',size: 40,)
+
+              ],
+            ),
+          ),
+          body: Column(
+            children: [
+              Container(
+                height: 700,
+
+                child:
+                  Column(
+                    children: [
+
+
+                    ],
+                  )
+
+              )
+            ],
+          ),
+        ),
+      );
+    }
+  }
+
+  /////////////////////////////////////////////////////////////
+  bottomNavigationBar: Container(
+            height: 60,
+            color: Colors.red,
+            child: Row(mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+              children: [
+                Icon(Icons.menu,semanticLabel: 'Menu',size: 40,),
+                Icon(Icons.home,semanticLabel: 'Home',size: 40,),
+                Icon(Icons.person,semanticLabel: 'Profile',size: 40,)
+
+              ],
+            ),
+          )
+
+
+
+
+
+          ///////////////////////////////////////////////////////////////////
+
+
+
+
+      //////////////////////////////////////////////////////////////////////////////////
+      bottomNavigationBar:Container(
+                child: GNav(
+                  padding: EdgeInsets.symmetric(horizontal: 15,vertical: 20),
+                  backgroundColor: Colors.black,
+                    color: Colors.white,
+                    activeColor: Colors.white,
+                    tabBackgroundColor: Colors.grey.shade400,
+
+                    tabs: [
+                  GButton(icon: Icons.person,
+                  gap: 8,
+                  padding: EdgeInsets.all(10),
+
+
+                  text: 'Profile',),
+                  GButton(icon: Icons.home,
+                  text: 'Home',),
+                  GButton(icon: Icons.settings,
+                  text: 'Settings',),
+                ]),
+              )
+//////////////////////////////////////////////////////
+
+
+
+
+Column(
+          children: [
+            Center(
+              child:ListView.builder(itemBuilder: (context,index){
+                return Container(
+                    height: 250,
+                    width: 380,
+                    decoration: BoxDecoration(
+
+                        borderRadius: BorderRadius.circular(50),
+                        border: Border.all(style: BorderStyle.none),
+                        boxShadow: [
+                          BoxShadow(
+                              spreadRadius: 10,
+                              blurRadius: 100,
+
+
+                              blurStyle: BlurStyle.outer,
+                              color: Colors.black26.withAlpha(45)
+                          )
+                        ]
+                    ),
+                    child:Column(mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                      children: [
+                        Image.asset('assets/car/amga35amga35rightfrontthreequarter-min.png',scale: 7,),
+                        Text('Amg A35',style:TextStyle(fontSize: 28,fontWeight: FontWeight.bold),),
+                        Text('Rs 17000/day',),
+                        Container(
+                          height: 40,
+                          width: 160,
+                          decoration: BoxDecoration(
+                              borderRadius: BorderRadius.circular(60),
+                              color: Colors.red
+                          ),
+                          child: Center(child: Text('Select',style: TextStyle(fontSize: 20,fontWeight: FontWeight.w800),)),
+                        )
+                      ],
+                    ));
+              },itemCount: sedan.length,
+              scrollDirection: Axis.vertical,)
+
+
+              ),
+
+          ],
+        ),
+
+
+        ///////////////////////////////////////////////////////////////////////////////
+
+
+          List<Map<dynamic,String>>sedan=[
+            {
+              'name':'Benz C Class',
+              'price':'7000',
+              'img':'assets/car/cclasscclassrightfrontthreequarter.png'
+            },
+
+            {
+              'name':'Ciaz',
+              'price':'1200',
+              'img':'assets/car/ciazciazrightfrontthreequarter.png'
+            },
+
+            {
+              'name':'Lamborgini Huracane',
+              'price':'43000',
+              'img':'assets/car/huracanevohuracanevorightfrontthreequarter.png'
+            },
+
+            {
+              'name':''Lamborgini Huracane evo'',
+              'price':'59000',
+              'img':'assets/car/huracanstohuracanstorightfrontthreequarter.png'
+            },
+
+            {
+              'name':'BMW M4',
+              'price':'16000',
+              'img':'assets/car/m4competitionm4competitionrightfrontthreequarter.png'
+            },
+
+            {
+              'name':'Rolls-Royce Wraith',
+              'price':'86000',
+              'img':'assets/car/wraithwraithrightfrontthreequarter.png'
+            },
+          ];
+          List<Map<String,dynamic>>aboutcar=[
+            {
+            'feat':"Air conditioner",
+            'icon':'assets/iconss/air-conditioner-4.png'
+          },
+            {
+              'feat':"Airbag",
+              'icon':'assets/iconss/airbag.png'
+            },
+            {
+              'feat':"Power steering",
+              'icon':'assets/iconss/powersteering.png'
+            },
+            {
+              'feat':"Power window",
+              'icon':'assets/iconss/powerwindow.png'
+            },
+
+            {
+              'feat':"USB charger",
+              'icon':'assets/iconss/usbcharger.png'
+            },
+
+            {
+              'feat':"Sparetyre",
+              'icon':'assets/iconss/sparetyre.png'
+            },
+          ];
+''
+
+/////////////////////////////////////////////////////////
+List<Map<dynamic,String>>allcarz=[
+    {
+      'name':'Ertiga',
+      'price':'2300',
+      'img':'assets/car/ertigaertigarightfrontthreequarter.png'
+    },
+
+    {
+      'name':'Land Cruiser',
+      'price':'18900',
+      'img':'assets/car/landcruiserlandcruiserrightfrontthreequarter.png'
+    },
+    {
+      'name':'Benz C Class',
+      'price':'7000',
+      'img':'assets/car/cclasscclassrightfrontthreequarter.png'
+    },
+
+    {
+      'name':'Ciaz',
+      'price':'1200',
+      'img':'assets/car/ciazciazrightfrontthreequarter.png'
+    },
+
+    {
+      'name':'Lamborgini Huracane',
+      'price':'43000',
+      'img':'assets/car/huracanevohuracanevorightfrontthreequarter.png'
+    },
+
+    {
+      'name':'Lamborgini Huracane evo',
+      'price':'59000',
+      'img':'assets/car/huracanstohuracanstorightfrontthreequarter.png'
+    },
+
+    {
+      'name':'BMW M4',
+      'price':'16000',
+      'img':'assets/car/m4competitionm4competitionrightfrontthreequarter.png'
+    },
+
+    {
+      'name':'Rolls-Royce Wraith',
+      'price':'86000',
+      'img':'assets/car/wraithwraithrightfrontthreequarter.png'
+    },
+    {
+      'name':'Alto K10',
+      'price':'700',
+      'img':'assets/car/altok10altok10rightfrontthreequarter-min.png'
+    },
+
+    {
+      'name':'Tata Altroz',
+      'price':'900',
+      'img':'assets/car/altrozaltrozrightfrontthreequarter-min.png'
+    },
+
+    {
+      'name':'Ioniq',
+      'price':'4300',
+      'img':'assets/car/ioniq5ioniqrightfrontthreequarter.png'
+    },
+
+    {
+      'name':'Tata Punch',
+      'price':'680',
+      'img':'assets/car/punchpunchrightfrontthreequarter.png'
+    },
+
+    {
+      'name':'Suzuki Swift',
+      'price':'1100',
+      'img':'assets/car/swift.png'
+    },
+
+    {
+      'name':'Tata Tiago',
+      'price':'1000',
+      'img':'assets/car/tiagotiagorightfrontthreequarter.png'
+    },
+    {
+      'name':'Suzuki Wagnor',
+      'price':'1200',
+      'img':'assets/car/wagonrwagonrrightfrontthreequarter.png'
+    },
+    {
+      'name':'Amg A35',
+      'price':'9700',
+      'img':'assets/car/amga35amga35rightfrontthreequarter-min.png'
+    },
+
+    {
+      'name':'C class',
+      'price':'9900',
+      'img':'assets/car/cclasscclassrightfrontthreequarter.png'
+    },
+
+    {
+      'name':'Lamorghinu Huracan',
+      'price':'84300',
+      'img':'assets/car/huracanevohuracanevorightfrontthreequarter.png'
+    },
+
+
+    {
+      'name':'BMW M4 sprts',
+      'price':'32200',
+      'img':'assets/car/m4competitionm4competitionrightfrontthreequarter.png'
+    },
+
+
+  ];

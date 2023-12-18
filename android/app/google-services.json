@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "513243809201",
+    "project_id": "urbanrider-2109c",
+    "storage_bucket": "urbanrider-2109c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:513243809201:android:6d3af712ec898629c36990",
+        "android_client_info": {
+          "package_name": "com.example.urban_riders"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA27V4WmtSZvRwF1QXeSqV8DtlZJCoy0RY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
